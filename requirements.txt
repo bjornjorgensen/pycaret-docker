@@ -1,5 +1,4 @@
 pycaret==2.0
-shap
 nbdime 
 hvplot 
 pyarrow 

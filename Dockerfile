@@ -8,5 +8,6 @@ WORKDIR /app
 COPY requirements.txt /tmp/
 RUN apt update && apt install libpq-dev python-dev gcc -y
 RUN pip install -r /tmp/requirements.txt
+RUN conda install -c conda-forge shap
 COPY . /tmp/ 
 EXPOSE 8888       
