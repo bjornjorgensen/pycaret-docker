@@ -1,9 +1,17 @@
 FROM continuumio/miniconda3
-LABEL "author"="Alexandre Farias"
-LABEL "author_email"="afarias@tuta.io"
+LABEL maintainder="author"="Alexandre Farias<afarias@tuta.io>"
 LABEL version="1.0"
 LABEL description="PyCaret 2.0 image with \
                     additional modules installed."
 
+ARG NB_USER="Kobashi"
+ARG NB_UID="1000"
+ARG NB_GID="100"
+
+USER $NB_UID
+WORKDIR $HOME
+COPY requirements.txt /tmp/
 RUN apt update && apt install libpq-dev python-dev gcc -y
-RUN pip install -r requirements.txt        
+RUN pip install -r /tmp/requirements.txt
+COPY . /tmp/ 
+EXPOSE 8888       
