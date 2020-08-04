@@ -1,5 +1,5 @@
 FROM continuumio/miniconda3
-LABEL maintainder="author"="Alexandre Farias<afarias@tuta.io>"
+LABEL maintainer="author"="Alexandre Farias<afarias@tuta.io>"
 LABEL version="1.0"
 LABEL description="PyCaret 2.0 image with \
                     additional modules installed."
