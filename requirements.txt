@@ -1,0 +1,12 @@
+pycaret==2.0
+shap
+nbdime 
+hvplot 
+pyarrow 
+psycopg2 
+pymongo 
+redis 
+fastapi[all] 
+gplearn 
+pylint 
+sphinx
