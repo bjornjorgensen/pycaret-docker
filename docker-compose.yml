@@ -1,0 +1,10 @@
+version: '3.7'
+services: 
+    jupyter-pycaret:
+        image: alfarias/pycaret
+        container_name: pycaret
+        volumes:
+            - "$PWD:/home/jovyan"
+        ports:
+            - "8888:8888"
+            - "5000:5000"            
