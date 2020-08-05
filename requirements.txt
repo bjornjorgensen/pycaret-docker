@@ -1,10 +1,7 @@
 pycaret==2.0
 nbdime 
 hvplot 
-pyarrow 
-psycopg2 
-pymongo 
-redis 
+pyarrow  
 fastapi[all] 
 gplearn 
 pylint 
