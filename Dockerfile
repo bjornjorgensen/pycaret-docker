@@ -1,11 +1,11 @@
 # Base Image
 FROM jupyter/minimal-notebook
 # Metadata
-LABEL maintainer="author"="Alexandre Farias<afarias@tuta.io>"
+LABEL maintainer="Alexandre Farias<afarias@tuta.io>"
 LABEL version="1.0"
 LABEL description="PyCaret 2.0 image with additional modules installed."
 # Update apt
-RUN apt update && apt install libpq-dev python-dev gcc -y
+RUN apt update && apt install libpq-dev python-dev gcc -y sudo
 # Install Python Packages
 COPY requirements.txt /tmp/
 RUN pip install -r /tmp/requirements.txt
