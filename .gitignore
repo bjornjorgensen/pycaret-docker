@@ -1,2 +1,3 @@
 .vscode/launch.json
 .vscode/settings.json
+.local/share/jupyter/runtime/notebook_cookie_secret
