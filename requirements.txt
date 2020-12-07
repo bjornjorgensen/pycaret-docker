@@ -1,5 +1,6 @@
-pycaret==2.1.2
-nbdime 
+pycaret==2.2.2
+nbdime
+plotnine[all]
 hvplot 
 pyarrow  
 fastapi[all] 
