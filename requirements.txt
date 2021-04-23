@@ -1,9 +1,9 @@
-pycaret==2.2.2
+pycaret[full]
 nbdime
 plotnine[all]
-hvplot 
-pyarrow  
-fastapi[all] 
-gplearn 
-pylint 
+hvplot
+pyarrow
+fastapi[all]
+gplearn
+pylint
 sphinx
